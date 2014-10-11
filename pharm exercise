@@ -1,0 +1,14 @@
+curl -O http://www.fight4rx.org/map/getpharms3.php?address=55024
+cat getpharms3.php?address=55024 getpharms3.php?address=55025 > yay.json
+
+
+getpharms3.php?address=55024
+getpharms3.php?address=55025
+getpharms3.php?address=55026
+getpharms3.php?address=55027
+getpharms3.php?address=55029
+getpharms3.php?address=55030
+getpharms3.php?address=55031
+getpharms3.php?address=55032
+getpharms3.php?address=55033
+getpharms3.php?address=55036
