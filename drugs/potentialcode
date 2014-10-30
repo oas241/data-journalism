@@ -1,0 +1,37 @@
+</div>
+       </a>
+    </div>
+    <img class="button" type="image" src="drugimg/excedrin.jpg" />
+   
+</div>
+<div class="imgBlock">
+    <div class="mosaic-block cover">
+        <div class="mosaic-overlay" style="display: block; left: 0px; bottom: 0px;">
+            <img type="image" src="drugimg/excedrin.jpg" />
+        </div>
+<a href="javascript:;" onclick="launchX2()" id="x2" class="mosaic-backdrop" style="display:inline;">
+  <div class="details">                
+    <h1>E Demo</h1>
+
+      </div>
+</a>
+
+    </div>
+    <img class="button" type="image" src="/images/e_btn.jpg" />
+    <p class="active">ACTIVE</p>
+</div>
+<div class="imgBlock">
+    <div class="mosaic-block cover boxgridLast">
+        <div class="mosaic-overlay" style="display: block; left: 0px; bottom: 0px;">
+            <img type="image" src="/images/c_crop.jpg" />
+        </div> <a href="javascript:;" onclick="launchX1()" id="x1" class="mosaic-backdrop" style="display:inline;">
+ <div class="details">
+   <h1>C Demo</h1>
+   <h4>Select C</h4>
+ </div>
+ </a>
+
+    </div>
+    <img class="button" type="image" src="/images/c_btn.jpg" />
+    <p class="active">ACTIVE</p>
+</div>`
