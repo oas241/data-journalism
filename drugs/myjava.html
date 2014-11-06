@@ -12,6 +12,10 @@
       padding-bottom:20px;
   }
 
+  .selected {
+  opacity: 0.1;
+  }
+
   </style>
 
 
@@ -25,38 +29,85 @@
   <h1>Starter interactive</h1>
 
 
+<p id="total">Total dose: <span id="total-amount-value"></span></p>
 
-
-<img data-dose='2,000' src="drugimg/alkaseltzer.jpg">
-<img data-dose='4,000' src="drugimg/anacin.jpg">
-<img data-dose='3,900' src="drugimg/childrenstylenol.jpg">
-<img data-dose='1,300' src="drugimg/coricidin.jpg">
-<img data-dose='2,100' src="drugimg/dayquil.jpg">
+<img data-dose='2000' src="drugimg/alkaseltzer.jpg">
+<img data-dose='4000' src="drugimg/anacin.jpg">
+<img data-dose='3900' src="drugimg/childrenstylenol.jpg">
+<img data-dose='1300' src="drugimg/coricidin.jpg">
+<img data-dose='2100' src="drugimg/dayquil.jpg">
 <img data-dose='800' src="drugimg/dimetapp.jpg">
-<img data-dose='2,000' src="drugimg/excedrin.jpg">
-<img data-dose='3,900' src="drugimg/hydrocodone.jpg">
-<img data-dose='2,600' src="drugimg/nyquil.jpg">
-<img data-dose='3,900' src="drugimg/oxycodone.jpg">
+<img data-dose='2000' src="drugimg/excedrin.jpg">
+<img data-dose='3900' src="drugimg/hydrocodone.jpg">
+<img data-dose='2600' src="drugimg/nyquil.jpg">
+<img data-dose='3900' src="drugimg/oxycodone.jpg">
 <img data-dose='800' src="drugimg/panadol.jpg">
-<img data-dose='3,900' src="drugimg/percoset.jpg">
-<img data-dose='3,840' src="drugimg/robitussin.jpg">
-<img data-dose='3,250' src="drugimg/sudafed.jpg">
-<img data-dose='3,900' src="drugimg/theraflu.jpg">
-<img data-dose='3,000' src="drugimg/tylenolextrastrngth.jpg">
-<img data-dose='2,600' src="drugimg/ultracet.jpg">
-<img data-dose='3,960' src="drugimg/vicodin.jpg">
-<img data-dose='3,900' src="drugimg/zicam.jpg">
-
+<img data-dose='3900' src="drugimg/percoset.jpg">
+<img data-dose='3840' src="drugimg/robitussin.jpg">
+<img data-dose='3250' src="drugimg/sudafed.jpg">
+<img data-dose='3900' src="drugimg/theraflu.jpg">
+<img data-dose='3000' src="drugimg/tylenolextrastrngth.jpg">
+<img data-dose='2600' src="drugimg/ultracet.jpg">
+<img data-dose='3960' src="drugimg/vicodin.jpg">
+<img data-dose='3900' src="drugimg/zicam.jpg">
+<script src="jquery-2.1.1.min.js"></script>
 
   <p>This is where HTML will go.</p>
 <script src="jquery-1.11.1.min.js"></script>
   <script type="text/javascript">
 
+var totaldose = 0;
 
 
 
 $("img").click(function(){
-      alert($(this).attr("data-dose"))
+
+  var thisdose = parseInt($(this).attr("data-dose"));
+      
+     
+var isselected= $( this ).hasClass( "selected" );
+      //fetch dose from element.
+
+      //tun strin ginto number
+
+      if (isselected == true) {
+        totaldose=totaldose-thisdose;
+
+      }
+      
+      if (isselected == false) {
+        totaldose=thisdose + totaldose; 
+
+        }
+
+        if (totaldose>=4000 && totaldose<8000) {
+            alert ("you have exceeded the FDAs recommended maximum daily limit");
+        }
+
+        if (totaldose>=8000 && totaldose<15000) {
+            alert ("you have exceeded the level at which liver damage can occur if taken for several days, according to McNeil, the maker of Tylenol");
+        }
+
+if (totaldose>=15000) {
+            alert ("You have exceeded the threshold toxic dose of acetaminophen. A single dose at this level can result in death, according to medical experts and literature.");
+        }
+
+      //add this to total
+      total = thisdose + totaldose;
+
+      alert(totaldose);
+
+      // alert + 50)
+
+$(this).toggleClass('selected');
+$("#total-amount-value").html(totaldose);
+
+$( "img" ).click(function( event ) {
+  console.log( "clicked: " + event.target );
+});
+
+
+
     })
 
 

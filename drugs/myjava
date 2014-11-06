@@ -12,6 +12,10 @@
       padding-bottom:20px;
   }
 
+  .selected {
+  opacity: 0.5;
+  }
+
   </style>
 
 
@@ -27,15 +31,15 @@
 
 
 
-<img data-dose='2,000' src="drugimg/alkaseltzer.jpg">
-<img data-dose='4,000' src="drugimg/anacin.jpg">
-<img data-dose='3,900' src="drugimg/childrenstylenol.jpg">
-<img data-dose='1,300' src="drugimg/coricidin.jpg">
-<img data-dose='2,100' src="drugimg/dayquil.jpg">
+<img class=selected data-dose='2,000' src="drugimg/alkaseltzer.jpg">
+<img data-dose='4000' src="drugimg/anacin.jpg">
+<img data-dose='3900' src="drugimg/childrenstylenol.jpg">
+<img data-dose='1300' src="drugimg/coricidin.jpg">
+<img data-dose='2100' src="drugimg/dayquil.jpg">
 <img data-dose='800' src="drugimg/dimetapp.jpg">
-<img data-dose='2,000' src="drugimg/excedrin.jpg">
-<img data-dose='3,900' src="drugimg/hydrocodone.jpg">
-<img data-dose='2,600' src="drugimg/nyquil.jpg">
+<img data-dose='2000' src="drugimg/excedrin.jpg">
+<img data-dose='3900' src="drugimg/hydrocodone.jpg">
+<img data-dose='2600' src="drugimg/nyquil.jpg">
 <img data-dose='3,900' src="drugimg/oxycodone.jpg">
 <img data-dose='800' src="drugimg/panadol.jpg">
 <img data-dose='3,900' src="drugimg/percoset.jpg">
