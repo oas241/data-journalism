@@ -161,6 +161,11 @@ hr.small {
     background-size: cover;
     -o-background-size: cover;
 }
+#welcome {
+    width:350px;
+    float:center;
+    padding:10px; 
+}
 
 /* About */
 
